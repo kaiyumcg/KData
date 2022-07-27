@@ -239,7 +239,7 @@ namespace CoreDataLib
 
         void SetData(Key key, List<Value> value, bool useOptimization)
         {
-#if _DEBUG_MODE
+#if GF_DEBUG
             bool success = false;
 #endif
             if (DSUtil.IsNull(key, isKeyValueType, useOptimization) == false && content != null && content.Count > 0)
@@ -249,14 +249,14 @@ namespace CoreDataLib
                     if (DSUtil.IsEqual(content[i]._Key, key, isKeyValueType, useOptimization))
                     {
                         content[i]._Value = value;
-#if _DEBUG_MODE
+#if GF_DEBUG
                         success = true;
 #endif
                     }
                 }
             }
 
-#if _DEBUG_MODE
+#if GF_DEBUG
             if (success == false)
             {
                 Debug.LogWarning("You were trying to set values against a key in the dictionary but the key is not present!" +
@@ -271,7 +271,7 @@ namespace CoreDataLib
             if (DSUtil.IsNull(key, isKeyValueType, useOptimization) == false)
             {
                 bool success = TryGetValues(key, out result, useOptimization);
-#if _DEBUG_MODE
+#if GF_DEBUG
                 if (success == false)
                 {
                     Debug.LogWarning("You were trying to get value against a key in the dictionary but the key is not present!" +
