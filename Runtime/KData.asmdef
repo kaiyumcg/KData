@@ -1,7 +1,11 @@
 {
-    "name": "CoreDataLib",
+    "name": "KData",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "UnityExt",
+        "Textus.SerializeReferenceUI",
+        "AttributeExt"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

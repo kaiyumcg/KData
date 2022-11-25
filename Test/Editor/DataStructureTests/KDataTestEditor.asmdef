@@ -1,12 +1,14 @@
 {
-    "name": "CoreDataLibTestRuntime",
+    "name": "KDataTestEditor",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "CoreDataLib"
+        "KData"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,

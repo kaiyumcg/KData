@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using System;
-using AttributeLib;
+using AttributeExt;
 
 namespace CoreDataLib
 {
