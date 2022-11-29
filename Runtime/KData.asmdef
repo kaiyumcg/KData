@@ -2,9 +2,8 @@
     "name": "KData",
     "rootNamespace": "",
     "references": [
-        "UnityExt",
-        "Textus.SerializeReferenceUI",
-        "AttributeExt"
+        "AttributeExt",
+        "UnityExt"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
