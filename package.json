@@ -10,6 +10,7 @@
     "DSA"
   ],
   "dependencies": {
-    "com.kaiyum.unityext": "https://github.com/kaiyumcg/UnityExt.git"
+    "com.kaiyum.unityext": "https://github.com/kaiyumcg/UnityExt.git",
+    "com.kaiyum.editorutil": "https://github.com/kaiyumcg/EditorUtil.git"
   }
 }
