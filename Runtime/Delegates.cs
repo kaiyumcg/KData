@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace CoreDataLib
+namespace KData
 {
     public delegate void OnAnimation(Animator animator);
     public delegate IEnumerator OnAnimationAsync(Animator animator);

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using AttributeExt;
 
-namespace CoreDataLib
+namespace KData
 {
     [System.Serializable]
     public class FOrderedDictionaryMultiPair<TKey, TValue>

@@ -3,7 +3,7 @@ using UnityEngine;
 using System;
 using AttributeExt;
 
-namespace CoreDataLib
+namespace KData
 {
     [System.Serializable]
     internal class TaskBase
