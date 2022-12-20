@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using AttributeExt;
+using AttributeExt2;
 
 namespace KData
 {
@@ -23,7 +23,7 @@ namespace KData
     [System.Serializable]
     public class FOrderedDictionary<Key, Value> : IEnumerator, IEnumerable
     {
-        [SerializeField] [CanNotEdit] List<FOrderedDictionaryPair<Key, Value>> content;
+        [SerializeField] [ReadOnly] List<FOrderedDictionaryPair<Key, Value>> content;
         bool isKeyValueType;
         public FOrderedDictionary()
         {

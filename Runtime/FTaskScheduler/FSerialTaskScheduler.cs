@@ -1,16 +1,16 @@
 using System.Collections;
 using UnityEngine;
 using System;
-using AttributeExt;
+using AttributeExt2;
 
 namespace KData
 {
     [System.Serializable]
     internal class TaskBase
     {
-        [CanNotEdit] [SerializeField] string taskName;
-        [CanNotEdit] [SerializeField] int PID;
-        [CanNotEdit] [SerializeField] bool executed, executing;
+        [ReadOnly] [SerializeField] string taskName;
+        [ReadOnly] [SerializeField] int PID;
+        [ReadOnly] [SerializeField] bool executed, executing;
         internal string TaskName { get { return taskName; } set { taskName = value; } }
         internal int ProcessID { get { return PID; } set { PID = value; } }
         internal bool Executed { get { return executed; } set { executed = value; } }
@@ -37,10 +37,10 @@ namespace KData
     public class FSerialTaskScheduler
     {
         //DebugViews for CustomInspector
-        [CanNotEdit] [SerializeField] FOrderedDictionary<int, AsyncTask> asyncCol;
-        [CanNotEdit] [SerializeField] FOrderedDictionary<int, SyncTask> syncCol;
-        [CanNotEdit] [SerializeField] FOrderedDictionary<int, AsyncTask> asyncCol_Queued;
-        [CanNotEdit] [SerializeField] FOrderedDictionary<int, SyncTask> syncCol_Queued;
+        [ReadOnly] [SerializeField] FOrderedDictionary<int, AsyncTask> asyncCol;
+        [ReadOnly] [SerializeField] FOrderedDictionary<int, SyncTask> syncCol;
+        [ReadOnly] [SerializeField] FOrderedDictionary<int, AsyncTask> asyncCol_Queued;
+        [ReadOnly] [SerializeField] FOrderedDictionary<int, SyncTask> syncCol_Queued;
 
         #region MutableStates
         MonoBehaviour mono;

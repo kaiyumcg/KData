@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using AttributeExt;
+using AttributeExt2;
 
 namespace KData
 {
@@ -30,7 +30,7 @@ namespace KData
     [System.Serializable]
     public class FOrderedMultimap<Key, Value> : IEnumerator, IEnumerable
     {
-        [CanNotEdit] [SerializeField] List<FOrderedDictionaryMultiPair<Key, Value>> content;
+        [ReadOnly] [SerializeField] List<FOrderedDictionaryMultiPair<Key, Value>> content;
         bool isKeyValueType, isValueValueType;
         MultiDictionaryMode mode = MultiDictionaryMode.Inclusive;
         public MultiDictionaryMode Mode { get { return mode; } }
