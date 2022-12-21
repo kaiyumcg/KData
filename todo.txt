@@ -1,0 +1,4 @@
+	---read only array or list with read only elements
+	---Various data structure and algorithm
+			---Serialized stack, queue, tree, octree etc
+			---Algorithm implementation with generic
